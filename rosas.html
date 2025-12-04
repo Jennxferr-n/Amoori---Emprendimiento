@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoori - Categoría</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo"> Amoori
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#valores">Propuesta de valor</a></li>
+            <li><a href="cajas.html">Cajas</a></li>
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="rosas.html">Rosas Eternas</a></li>
+            <li><a href="joyeria.html">Joyería</a></li>
+            <li><a href="fotos.html">Cuadros</a></li>
+            <li><a href="stickers.html">Stickers</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><button id="cart-btn" class="cart-btn">🛒<span id="cart-count">0</span></button></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TÍTULO DE SECCIÓN -->
+<section class="especial-section">
+    <h2>Categoría: Rosas Eternas</h2>
+</section>
+
+<!-- GRID DE PRODUCTOS -->
+<section class="productos">
+    <div class="productos-grid">
+
+        <!-- Aquí SOLO pones los productos que sean de esta categoría -->
+        <!-- EJEMPLO -->
+ <!-- PRODUCTO 116 -->
+            <div class="producto-card"><img src="img/p116.jpg">
+                <h3>Arreglo floral Letras</h3>
+                <p class="price">$9.50</p>
+                <button class="add-btn" data-name="Arreglo floral Letras" data-price="9.50">Agregar 🛒</button>
+            </div>
+
+    
+            <!-- PRODUCTO 118 -->
+            <div class="producto-card"><img src="img/p118.jpg">
+                <h3>Ramo de 7 rosas Eternas</h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Eternas" data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 119 -->
+            <div class="producto-card"><img src="img/p119.jpg">
+                <h3>Ramo de 3 Rosas Eternas </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 Rosas Eternas " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 120 -->
+            <div class="producto-card"><img src="img/p120.jpg">
+                <h3>Ramo de HelloKitty 7 rosas </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de HelloKitty 7 rosas " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 121 -->
+            <div class="producto-card"><img src="img/p121.jpg">
+                <h3>Ramo de Snoopy 12 rosas</h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 12 rosas" data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 122 -->
+            <div class="producto-card"><img src="img/p122.jpg">
+                <h3>Ramo de Snoopy 7 rosas</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 7 rosas" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 123 -->
+            <div class="producto-card"><img src="img/p123.jpg">
+                <h3>Ramo de Snoopy 16 rosas</h3>
+                <p class="price">$22.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 16 rosas" data-price="22.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 124-->
+            <div class="producto-card"><img src="img/p124.jpg">
+                <h3>Ramo de 1 rosa + chocolates</h3>
+                <p class="price">$4.50</p>
+                <button class="add-btn" data-name="Ramo de 1 rosa + chocolates" data-price="4.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 125 -->
+            <div class="producto-card"><img src="img/p125.jpg">
+                <h3>Ramo de 6 ganchos hawaianos</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de ganchos hawaianos" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 126 -->
+            <div class="producto-card"><img src="img/p126.jpg">
+                <h3>Ramo de 3 ganchos hawaianos</h3>
+                <p class="price">$5.50</p>
+                <button class="add-btn" data-name="Ramo de 3 ganchos hawaianos" data-price="5.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 127 -->
+            <div class="producto-card"><img src="img/p127.jpg">
+                <h3>Ramo de 3 rosas  </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 128 -->
+            <div class="producto-card"><img src="img/p128.jpg">
+                <h3>Ramo de 4 rosas</h3>
+                <p class="price">$6.00</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas" data-price="6.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 129 -->
+            <div class="producto-card"><img src="img/p129.jpg">
+                <h3>Ramo de 5 rosas</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+              <!-- PRODUCTO 130 -->
+            <div class="producto-card"><img src="img/p130.jpg">
+                <h3>Ramo de 5 rosas</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 131-->
+            <div class="producto-card"><img src="img/p131.jpg">
+                <h3>Ramo de 4 rosas + 1 chocolate</h3>
+                <p class="price">$5.50</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas + 1 chocolate" data-price="3.50">Agregar 🛒</button>
+            </div>
+
+  
+            <!-- PRODUCTO 133 -->
+            <div class="producto-card"><img src="img/p133.jpg">
+                <h3>Ramo de graduación 6 rosas </h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Ramo de graduación 6 rosas" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 134 -->
+            <div class="producto-card"><img src="img/p134.jpg">
+                <h3>Ramo de 8 rosas </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 8 rosas" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 135 -->
+            <div class="producto-card"><img src="img/p135.jpg">
+                <h3>Ramo de 7 rosas + nievecita </h3>
+                <p class="price">$9.50</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas + nievecita" data-price="9.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 136 -->
+            <div class="producto-card"><img src="img/p136.jpg">
+                <h3>Ramo de 3 rosas + nievecita</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas + nievecita" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+          
+            <!-- PRODUCTO 139 -->
+            <div class="producto-card"><img src="img/p139.jpg">
+                <h3>Ramo de 6 rosas + peluche </h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de 6 rosas + peluche" data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 140 -->
+            <div class="producto-card"><img src="img/p140.jpg">
+                <h3>Ramo de 7 rosas Messi</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Messi" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 141 -->
+            <div class="producto-card"><img src="img/p141.jpg">
+                <h3>Ramo de 7 rosas Cristiano Ronaldo </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Cristiano Ronaldo" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 142 -->
+            <div class="producto-card"><img src="img/p142.jpg">
+                <h3>Ramo de 7 rosas Spiderman </h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Spiderman" data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 143 -->
+            <div class="producto-card"><img src="img/p143.jpg">
+                <h3>Ramo de 6 rosas + 2 Hotwheels </h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de 6 rosas + 2 Hotwheels " data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 144 -->
+            <div class="producto-card"><img src="img/p144.jpg">
+                <h3>Ramo de 5 rosas + 1 Hotwheel</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas + 1 Hotwheel" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 145 -->
+            <div class="producto-card"><img src="img/p145.jpg">
+                <h3>Ramo de 7 rosas + gorra</h3>
+                <p class="price">$22.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas + gorra" data-price="22.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 146 -->
+            <div class="producto-card"><img src="img/p146.jpg">
+                <h3>17 rosas + balón de fútbol </h3>
+                <p class="price">$30.00</p>
+                <button class="add-btn" data-name="17 rosas + balón de fútbol " data-price="30.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 147 -->
+            <div class="producto-card"><img src="img/p147.jpg">
+                <h3>Ramo de 14 rosas RM</h3>
+                <p class="price">$18.00</p>
+                <button class="add-btn" data-name="Ramo de 14 rosas RM" data-price="3.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 148 -->
+            <div class="producto-card"><img src="img/p148.jpg">
+                <h3>Ramo de 7 rosas RM </h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas RM " data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 149 -->
+            <div class="producto-card"><img src="img/p149.jpg">
+                <h3>Ramo de 16 rosas FCB </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Ramo de 16 rosas FCB" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 150 -->
+            <div class="producto-card"><img src="img/p150.jpg">
+                <h3>Ramo de 4 rosas FCB </h3>
+                <p class="price">$6.00</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas FCB" data-price="6.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 151 -->
+            <div class="producto-card"><img src="img/p151.jpg">
+                <h3>Ramo de 3 rosas + Hotwheel </h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas + Hotwheel" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

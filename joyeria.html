@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoori - Categoría</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo"> Amoori
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#valores">Propuesta de valor</a></li>
+            <li><a href="cajas.html">Cajas</a></li>
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="rosas.html">Rosas Eternas</a></li>
+            <li><a href="joyeria.html">Joyería</a></li>
+            <li><a href="fotos.html">Cuadros</a></li>
+            <li><a href="stickers.html">Stickers</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><button id="cart-btn" class="cart-btn">🛒<span id="cart-count">0</span></button></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- TÍTULO DE SECCIÓN -->
+<section class="especial-section">
+    <h2>Categoría: Joyeria</h2>
+</section>
+
+<!-- GRID DE PRODUCTOS -->
+<section class="productos">
+    <div class="productos-grid">
+
+        <!-- Aquí SOLO pones los productos que sean de esta categoría -->
+        <!-- EJEMPLO -->
+                <!-- PRODUCTO 153 -->
+            <div class="producto-card"><img src="img/p153.jpg">
+                <h3>Par de pulseras Spiderman </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Par de pulseras Spiderman" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 154 -->
+            <div class="producto-card"><img src="img/p154.jpg">
+                <h3>Pulsera de Spiderman </h3>
+                <p class="price">$2.00</p>
+                <button class="add-btn" data-name="Pulsera de Spiderman" data-price="2.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 155 -->
+            <div class="producto-card"><img src="img/p155.jpg">
+                <h3>Collar de HelloKitty</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de HelloKitty" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 157-->
+            <div class="producto-card"><img src="img/p157.jpg">
+                <h3>Collar Girasol de Sherk </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar Girasol de Sherk" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 158 -->
+            <div class="producto-card"><img src="img/p158.jpg">
+                <h3>Collar de balón de fútbol </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar de balón de fútbol" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 159 -->
+            <div class="producto-card"><img src="img/p159.jpg">
+                <h3>Collar de cerezas </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar de cerezas" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 160-->
+            <div class="producto-card"><img src="img/p160.jpg">
+                <h3>Collar Culpa Tuya</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar Culpa Tuya" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 161 -->
+            <div class="producto-card"><img src="img/p161.jpg">
+                <h3>Par de collares HelloKitty/Spiderman </h3>
+                <p class="price">$10.0</p>
+                <button class="add-btn" data-name="Par de collares HelloKitty/Spiderman " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+        
+            
+            <!-- PRODUCTO 163 -->
+            <div class="producto-card"><img src="img/p163.jpg">
+                <h3>Collar de Spiderman </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de Spiderman " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 163 -->
+            <div class="producto-card"><img src="img/p163.jpg">
+                <h3>Collar de Spiderman girl</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de Spiderman " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 161 -->
+            <div class="producto-card"><img src="img/p161.jpg">
+                <h3>Par de collares Spiderman </h3>
+                <p class="price">$10.0</p>
+                <button class="add-btn" data-name="Par de collares Spiderman " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+        
+            
+            
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoori - Amar también es dar</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+    <img src="img/logo.jpg" alt="Logo">
+    Amoori
+</div>
+<!-- BOTÓN MENÚ HAMBURGUESA (solo visible en móviles) -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links" id="nav-menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#valores">Propuesta de valor</a></li>
+    <li><a href="cajas.html">Cajas</a></li>
+    <li><a href="camisetas.html">Camisetas</a></li>
+    <li><a href="rosas.html">Rosas Eternas</a></li>
+    <li><a href="joyeria.html">Joyería</a></li>
+     <li><a href="fotos.html">Cuadros</a></li>
+    <li><a href="stickers.html">Stickers</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><button id="cart-btn" class="cart-btn">🛒<span id="cart-count">0</span></button></li>
+</ul>
+
+
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <h1>Amoori</h1>
+        <p class="slogan">amar también es dar</p>
+        <button onclick="scrollToProductos()" class="btn">Ver Productos</button>
+    </section>
+
+
+    <!-- ========== PROPUESTAS DE VALOR ========== -->
+<section id="valores" class="especial-section">
+    <h2>Acá encuentras los mejores regalos</h2>
+    <p class="descripcion">
+        Queremos que cada detalle que regales sea especial, único y perfecto para ti. 💜
+    </p>
+
+    <div class="especial-grid">
+
+        <!-- VALOR 1 -->
+        <div class="especial-card">
+            <img src="img/propuesta1.png" alt="Personalización">
+            <h3>100% Personalizables</h3>
+            <p>Cada producto lo diseñamos exactamente a tu gusto: colores, nombres, mensajes y estilo.</p>
+        </div>
+
+        <!-- VALOR 2 -->
+        <div class="especial-card">
+            <img src="img/propuesta2.png" alt="Presupuesto">
+            <h3>Nos adaptamos a tu presupuesto</h3>
+            <p>Creemos que un bonito detalle no debe ser caro. Tú dices cuánto puedes gastar y nosotros creamos algo ideal para ti.</p>
+        </div>
+
+        <!-- VALOR 3 -->
+        <div class="especial-card">
+            <img src="img/propuesta3.png" alt="Entrega Rápida">
+            <h3>Entrega rápida y eficaz</h3>
+            <p>Tu pedido estará listo a tiempo. Contamos con un proceso de elaboración y envío ágil y responsable.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== BUSCADOR DE PRODUCTOS ========== -->
+<section class="buscador-container">
+    <div class="buscador-box">
+        <span class="icono">🔍</span>
+        <input 
+            type="text" 
+            id="buscador" 
+            placeholder="Buscar productos..." 
+            onkeyup="buscarProducto()"
+        >
+        <button class="btn-buscar" onclick="buscarProducto()">Buscar</button>
+    </div>
+</section>
+<!-- acaaba el buscador-->
+
+    <!-- PRODUCTOS (130 SLOTS LISTOS PARA EDITAR) -->
+    <section id="productos" class="productos">
+        <h2>Todos los Productos</h2>
+
+        <div class="productos-grid">
+
+ <!-- APARTADOS DE PRODUCTOS -->
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto-card"><img src="img/p1.jpg">
+                <h3>Caja de Messi </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Messi" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+                  <!-- PRODUCTO 2 -->
+            <div class="producto-card"><img src="img/p2.jpg">
+                <h3>Caja de Dragon Ball Z </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Dragon Ball Z" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+                  <!-- PRODUCTO 3 -->
+            <div class="producto-card"><img src="img/p3.jpg">
+                <h3>Frasquitos de gomitas - caja</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Frasquitos de gomitas - caja" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+                  <!-- PRODUCTO 4 -->
+            <div class="producto-card"><img src="img/p4.jpg">
+                <h3>Caja llena de golosinas </h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Caja llena de golosinas" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+      <!-- PRODUCTO 5 -->
+            <div class="producto-card"><img src="img/p5.jpg">
+                <h3>Caja de Spiderman </h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Caja de Spiderman" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+
+              <!-- PRODUCTO 6 -->
+            <div class="producto-card"><img src="img/p6.jpg">
+                <h3>Caja de HelloKitty</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de HelloKitty" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+      <!-- PRODUCTO 7 -->
+            <div class="producto-card"><img src="img/p7.jpg">
+                <h3>Caja de Kuromi</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Kuromi" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+
+      <!-- PRODUCTO 8 -->
+            <div class="producto-card"><img src="img/p8.jpg">
+                <h3>Caja de Rayo MCqueen</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Rayo MCqueen" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+
+      <!-- PRODUCTO 9 -->
+            <div class="producto-card"><img src="img/p9.jpg">
+                <h3>Caja de Naruto</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Naruto" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+      <!-- PRODUCTO 10 -->
+            <div class="producto-card"><img src="img/p10.jpg">
+                <h3>Caja de DeadPool</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de DeadPool" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+<!-- PRODUCTO 11 -->
+            <div class="producto-card"><img src="img/p11.jpg">
+                <h3>Caja de Messi</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Messi" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+<!-- PRODUCTO 12 -->
+            <div class="producto-card"><img src="img/p12.jpg">
+                <h3>Caja de Cristiano Ronaldo</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Cristiano Ronaldo" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 13 -->
+            <div class="producto-card"><img src="img/p13.jpg">
+                <h3>Caja de Barbie</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Barbie" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+
+            <!-- PRODUCTO 15 -->
+            <div class="producto-card"><img src="img/p15.jpg">
+                <h3>Caja de Luffy</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Luffy" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 16 -->
+            <div class="producto-card"><img src="img/p16.jpg">
+                <h3>Caja de Mario Bros</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Mario Bros" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+
+            <!-- PRODUCTO 17 -->
+            <div class="producto-card"><img src="img/p17.jpg">
+                <h3>Caja de HelloKitty</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de HelloKitty" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 18 -->
+            <div class="producto-card"><img src="img/p18.jpg">
+                <h3>Caja de Minecraft</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Minecraft" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 19 -->
+            <div class="producto-card"><img src="img/p19.jpg">
+                <h3>Caja con golosinas</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Caja con golosinas" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 21 -->
+            <div class="producto-card"><img src="img/p21.jpg">
+                <h3>Caja de Vaquita</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Vaquita" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 22 -->
+            <div class="producto-card"><img src="img/p22.jpg">
+                <h3>Caja de Cerdito</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Cerdito" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 23 -->
+            <div class="producto-card"><img src="img/p23.jpg">
+                <h3>Caja de El Principito</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de El Principito" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 24 -->
+            <div class="producto-card"><img src="img/p24.jpg">
+                <h3>Caja del bicho siuuu</h3>
+                <p class="price">$6.50</p>
+                <button class="add-btn" data-name="Caja del bicho siuuu" data-price="6.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 25 -->
+            <div class="producto-card"><img src="img/p25.jpg">
+                <h3>Caja de Stitch</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Stitch" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 26 -->
+            <div class="producto-card"><img src="img/p26.jpg">
+                <h3>Caja de Cristiano Ronaldo</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Cristiano Ronaldo" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 27 -->
+            <div class="producto-card"><img src="img/p27.jpg">
+                <h3>Caja de Snoopy </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Snoopy" data-price="8.50">Agregar 🛒</button>
+            </div> 
+
+            <!-- PRODUCTO 28 -->
+            <div class="producto-card"><img src="img/p28.jpg">
+                <h3>Caja de Stitch</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Caja de Stitch" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 29 -->
+            <div class="producto-card"><img src="img/p29.jpg">
+                <h3>Caja de golosinas mediana</h3>
+                <p class="price">$6.50</p>
+                <button class="add-btn" data-name="Caja de golosinas mediana" data-price="6.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 30 -->
+            <div class="producto-card"><img src="img/p30.jpg">
+                <h3>Caja para papá </h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Caja para papá" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 31 -->
+            <div class="producto-card"><img src="img/p31.jpg">
+                <h3>Caja para papá</h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Caja para papá" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 32 -->
+            <div class="producto-card"><img src="img/p32.jpg">
+                <h3>Caja con corazones </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja con corazones " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 33 -->
+            <div class="producto-card"><img src="img/p33.jpg">
+                <h3>Caja de Trueno</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Trueno" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 34 -->
+            <div class="producto-card"><img src="img/p34.jpg">
+                <h3>Caja para Profesores</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Caja para Profesores" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 35 -->
+            <div class="producto-card"><img src="img/p35.jpg">
+                <h3>Caja para Profesores</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Caja para Profesores" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 36 -->
+            <div class="producto-card"><img src="img/p36.jpg">
+                <h3>Caja de BTS</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de BTS" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            
+                <!-- PRODUCTO 37 -->
+            <div class="producto-card"><img src="img/p37.jpg">
+                <h3>Caja de Bob Esponja</h3>
+                <p class="price">$6.50</p>
+                <button class="add-btn" data-name="Caja de Bob Esponja" data-price="6.50">Agregar 🛒</button>
+            </div>
+
+           
+
+            <!-- PRODUCTO 39 -->
+            <div class="producto-card"><img src="img/p39.jpg">
+                <h3>Caja de fC Barcelona</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de fC Barcelona" data-price="8.50">Agregar 🛒</button>
+            </div>
+            </var>
+
+            <!-- PRODUCTO 40 -->
+            <div class="producto-card"><img src="img/p40.jpg">
+                <h3>Caja de FC Real Madrid</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de FC Real Madrid" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 41 \-->
+            <div class="producto-card"><img src="img/p41.jpg">
+                <h3>Caja de Sherk + notita </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Sherk + notita " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+
+            <!-- PRODUCTO 44 -->
+            <div class="producto-card"><img src="img/p44.jpg">
+                <h3>Caja de Anuel </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Anuel" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 45-->
+            <div class="producto-card"><img src="img/p45.jpg">
+                <h3>Caja de HelloKitty</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de HelloKitty" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 46 -->
+            <div class="producto-card"><img src="img/p46.jpg">
+                <h3>Caja de Messi + notita</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Messi + notita" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 47 -->
+            <div class="producto-card"><img src="img/p47.jpg">
+                <h3>Caja de HelloKitty mediana</h3>
+                <p class="price">$6.50</p>
+                <button class="add-btn" data-name="Caja de HelloKitty mediana" data-price="6.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 48 -->
+            <div class="producto-card"><img src="img/p48.jpg">
+                <h3>Caja de Spiderman mediana</h3>
+                <p class="price">$6.50</p>
+                <button class="add-btn" data-name="Caja de Spiderman mediana" data-price="6.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 49 -->
+            <div class="producto-card"><img src="img/p49.jpg">
+                <h3>Caja de Harry Potter </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Harry Potter " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 50 -->
+            <div class="producto-card"><img src="img/p50.jpg">
+                <h3>Caja de Flash</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Flash" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 51 -->
+            <div class="producto-card"><img src="img/p51.jpg">
+                <h3>Caja de Enredados</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Enredados" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 52 -->
+            <div class="producto-card"><img src="img/p52.jpg">
+                <h3>Caja de Chimuelo</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Chimuelo" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 53 -->
+            <div class="producto-card"><img src="img/p53.jpg">
+                <h3>Caja de Looney Tunes</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Looney Tunes" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            
+                <!-- PRODUCTO 54 -->
+            <div class="producto-card"><img src="img/p54.jpg">
+                <h3>Caja de Conejito</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Conejito" data-price="8.50">Agregar 🛒</button>
+            </div>
+>
+
+            <!-- PRODUCTO 56 -->
+            <div class="producto-card"><img src="img/p56.jpg">
+                <h3>Caja de Neymar </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Neymar" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 57-->
+            <div class="producto-card"><img src="img/p57.jpg">
+                <h3>Caja de Cumpleaños </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Cumpleaños" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 58 -->
+            <div class="producto-card"><img src="img/p58.jpg">
+                <h3>Caja de Batman</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Batman" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 59 -->
+            <div class="producto-card"><img src="img/p59.jpg">
+                <h3>Caja de Cumpleaños /h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Cumpleaños " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 60 -->
+            <div class="producto-card"><img src="img/p60.jpg">
+                <h3>Caja de Cumpleaños </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Cumpleaños " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+
+            <!-- PRODUCTO 62 -->
+            <div class="producto-card"><img src="img/p62.jpg">
+                <h3>Caja de JoJi</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de JoJi" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 63 -->
+            <div class="producto-card"><img src="img/p63.jpg">
+                <h3>Caja de Chicas Superpoderosas </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Chicas Superpoderosas " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 64 -->
+            <div class="producto-card"><img src="img/p64.jpg">
+                <h3>Caja de Gatitos</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Gatitos" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 65 -->
+            <div class="producto-card"><img src="img/p65.jpg">
+                <h3>Caja de Kick Buttowski</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Kick Buttowsk" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+        
+
+            <!-- PRODUCTO 67 -->
+            <div class="producto-card"><img src="img/p66.jpg">
+                <h3>Caja de Barbie </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Barbie" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 68 -->
+            <div class="producto-card"><img src="img/p67.jpg">
+                <h3>Caja de Astronautas</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de astronautas" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 69 -->
+            <div class="producto-card"><img src="img/p68.jpg">
+                <h3>Caja de Demon</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Demon" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 70 -->
+            <div class="producto-card"><img src="img/p69.jpg">
+                <h3>Caja de Marie la gata</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Marie la gata" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+              <!-- PRODUCTO 71 -->
+            <div class="producto-card"><img src="img/p70.jpg">
+                <h3>Caja de Iron Man</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Iron Man" data-price="8.50">Agregar 🛒</button>
+            </div>
+           
+           
+
+            <!-- PRODUCTO 73 -->
+            <div class="producto-card"><img src="img/p72.jpg">
+                <h3>Caja Hotwheels </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja Hotwheels " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 74 -->
+            <div class="producto-card"><img src="img/p73.jpg">
+                <h3>Caja de Superman </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Superman " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 75 -->
+            <div class="producto-card"><img src="img/p74.jpg">
+                <h3>Caja Hotwheel mediana </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Caja Hotwheel mediana" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 76 -->
+            <div class="producto-card"><img src="img/p75.jpg">
+                <h3>Caja de Spiderman+venom </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Spiderman+venom " data-price="8.50">Agregar 🛒</button>
+            </div>
+            
+            <!-- PRODUCTO 78 -->
+            <div class="producto-card"><img src="img/p76.jpg">
+                <h3>Caja de DemonHuntrix</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de DemonHuntrix" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 79-->
+            <div class="producto-card"><img src="img/p77.jpg">
+                <h3>Caja de Toallin </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Toallin" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 80 -->
+            <div class="producto-card"><img src="img/p78.jpg">
+                <h3>Caja de Los Rugrats</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Los Rugrats" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 81 -->
+            <div class="producto-card"><img src="img/p79.jpg">
+                <h3>Caja de Star Wars</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Star Wars" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 82 -->
+            <div class="producto-card"><img src="img/p80.jpg">
+                <h3>Caja de MegaCaballero</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de MegaCaballero" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 83 -->
+            <div class="producto-card"><img src="img/p81.jpg">
+                <h3>Caja de BTS</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de BTS" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 84 -->
+            <div class="producto-card"><img src="img/p82.jpg">
+                <h3>Caja de Batman + nombre</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Batman + nombre" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 85 -->
+            <div class="producto-card"><img src="img/p83.jpg">
+                <h3>Caja de Spiderman +  nombre</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Spiderman +  nombre" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 86 -->
+            <div class="producto-card"><img src="img/p84.jpg">
+                <h3>Caja de Kuromi</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Kuromi" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 87 -->
+            <div class="producto-card"><img src="img/p85.jpg">
+                <h3>Caja de Clash Royale </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Clash Royale" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 88 -->
+            <div class="producto-card"><img src="img/p86.jpg">
+                <h3>Caja de Messi + nombre</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Messi + nombre" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 89 -->
+            <div class="producto-card"><img src="img/p87.jpg">
+                <h3>Caja de My Melody </h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de My Melody " data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 90 -->
+            <div class="producto-card"><img src="img/p88.jpg">
+                <h3>Caja de Bellota</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Bellota" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 91 -->
+            <div class="producto-card"><img src="img/p89.jpg">
+                <h3>Caja de Capibara</h3>
+                <p class="price">$8.50</p>
+                <button class="add-btn" data-name="Caja de Capibara" data-price="8.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 92 -->
+            <div class="producto-card"><img src="img/p90.jpg">
+                <h3>Caja de Snoopy</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Caja de Snoopy" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+                <!-- PRODUCTO 94-->
+            <div class="producto-card"><img src="img/p92.jpg">
+                <h3>Cuadro de Real Madrid </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro de Real Madrid" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 95 -->
+            <div class="producto-card"><img src="img/p93.jpg">
+                <h3>Camiseta "Love" </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Love" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 96 -->
+            <div class="producto-card"><img src="img/p96.jpg">
+                <h3>Camiseta Latin Mafia </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Latin Mafia " data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            
+                <!-- PRODUCTO 97 -->
+            <div class="producto-card"><img src="img/p97.jpg">
+                <h3>Camiseta Reels B </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Reels B " data-price="20.00">Agregar 🛒</button>
+            </div>
+            
+            <!-- PRODUCTO 98 -->
+       <div class="producto-card"><img src="img/p98.jpg">
+                <h3>Camiseta Reels B </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Reels B " data-price="20.00">Agregar 🛒</button>
+            </div>
+            
+                <!-- PRODUCTO 99 -->
+            <div class="producto-card"><img src="img/p99.jpg">
+                <h3>Camiseta Quevedo</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Quevedo" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 100 -->
+            <div class="producto-card"><img src="img/p100.jpg">
+                <h3>Camiseta Nsqk </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Nsqk" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 101 -->
+            <div class="producto-card"><img src="img/p101.jpg">
+                <h3>Camiseta Alvaro Diaz</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Alvaro Diaz" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 102 -->
+             <div class="producto-card"><img src="img/p102.jpg">
+                <h3>Camiseta Alvaro Diaz</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Alvaro Diaz" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+
+           <!-- PRODUCTO 103 -->
+            <div class="producto-card"><img src="img/p103.jpg">
+                <h3>Camiseta Rayo MCqueen</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Rayo MCqueen" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 104 -->
+            <div class="producto-card"><img src="img/p104.jpg">
+                <h3>Camiseta Sally</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Sally" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 105 -->
+            <div class="producto-card"><img src="img/p105.jpg">
+                <h3>Camiseta Milo J </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Milo J" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 106 -->
+            <div class="producto-card"><img src="img/p106.jpg">
+                <h3>Camiseta Lana del Rey</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Lana del Rey" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 107 -->
+            <div class="producto-card"><img src="img/p107.jpg">
+                <h3>Camiseta Rauw Alejandro</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Rauw Alejandro" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 108 -->
+            <div class="producto-card"><img src="img/p108.jpg">
+                <h3>Camiseta de Lancer</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta de Lancer" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+           <!-- PRODUCTO 109 -->
+            <div class="producto-card"><img src="img/p109.jpg">
+                <h3>Camiseta de Nissan</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta de Nissan" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            
+                <!-- PRODUCTO 110 -->
+            <div class="producto-card"><img src="img/p110.jpg">
+                <h3>Camiseta Honda</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Honda" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 111 -->
+            <div class="producto-card"><img src="img/p111.jpg">
+                <h3>Camiseta Porsche</h3>
+                <p class="price">$20.000</p>
+                <button class="add-btn" data-name="Camiseta Porsche" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 112 -->
+            <div class="producto-card"><img src="img/p112.jpg">
+                <h3>Camiseta Halley Davidson </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Halley Davidson" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 113 -->
+            <div class="producto-card"><img src="img/p113.jpg">
+                <h3>Camiseta Skyline </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Skyline " data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 114 -->
+            <div class="producto-card"><img src="img/p114.jpg">
+                <h3>Camiseta Messi</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Messi" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 115 -->
+            <div class="producto-card"><img src="img/p115.jpg">
+                <h3>Camiseta Cristiano Ronaldo</h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Camiseta Cristiano Ronaldo" data-price="20.00">Agregar 🛒</button>
+            </div>
+            <!-- PRODUCTO 116 -->
+            <div class="producto-card"><img src="img/p116.jpg">
+                <h3>Arreglo floral Letras</h3>
+                <p class="price">$9.50</p>
+                <button class="add-btn" data-name="Arreglo floral Letras" data-price="9.50">Agregar 🛒</button>
+            </div>
+
+    
+            <!-- PRODUCTO 118 -->
+            <div class="producto-card"><img src="img/p118.jpg">
+                <h3>Ramo de 7 rosas Eternas</h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Eternas" data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 119 -->
+            <div class="producto-card"><img src="img/p119.jpg">
+                <h3>Ramo de 3 Rosas Eternas </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 Rosas Eternas " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 120 -->
+            <div class="producto-card"><img src="img/p120.jpg">
+                <h3>Ramo de HelloKitty 7 rosas </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de HelloKitty 7 rosas " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 121 -->
+            <div class="producto-card"><img src="img/p121.jpg">
+                <h3>Ramo de Snoopy 12 rosas</h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 12 rosas" data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 122 -->
+            <div class="producto-card"><img src="img/p122.jpg">
+                <h3>Ramo de Snoopy 7 rosas</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 7 rosas" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 123 -->
+            <div class="producto-card"><img src="img/p123.jpg">
+                <h3>Ramo de Snoopy 16 rosas</h3>
+                <p class="price">$22.00</p>
+                <button class="add-btn" data-name="Ramo de Snoopy 16 rosas" data-price="22.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 124-->
+            <div class="producto-card"><img src="img/p124.jpg">
+                <h3>Ramo de 1 rosa + chocolates</h3>
+                <p class="price">$4.50</p>
+                <button class="add-btn" data-name="Ramo de 1 rosa + chocolates" data-price="4.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 125 -->
+            <div class="producto-card"><img src="img/p125.jpg">
+                <h3>Ramo de 6 ganchos hawaianos</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de ganchos hawaianos" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 126 -->
+            <div class="producto-card"><img src="img/p126.jpg">
+                <h3>Ramo de 3 ganchos hawaianos</h3>
+                <p class="price">$5.50</p>
+                <button class="add-btn" data-name="Ramo de 3 ganchos hawaianos" data-price="5.50">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 127 -->
+            <div class="producto-card"><img src="img/p127.jpg">
+                <h3>Ramo de 3 rosas  </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 128 -->
+            <div class="producto-card"><img src="img/p128.jpg">
+                <h3>Ramo de 4 rosas</h3>
+                <p class="price">$6.00</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas" data-price="6.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 129 -->
+            <div class="producto-card"><img src="img/p129.jpg">
+                <h3>Ramo de 5 rosas</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+              <!-- PRODUCTO 130 -->
+            <div class="producto-card"><img src="img/p130.jpg">
+                <h3>Ramo de 5 rosas</h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 131-->
+            <div class="producto-card"><img src="img/p131.jpg">
+                <h3>Ramo de 4 rosas + 1 chocolate</h3>
+                <p class="price">$5.50</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas + 1 chocolate" data-price="3.50">Agregar 🛒</button>
+            </div>
+
+  
+            <!-- PRODUCTO 133 -->
+            <div class="producto-card"><img src="img/p133.jpg">
+                <h3>Ramo de graduación 6 rosas </h3>
+                <p class="price">$8.00</p>
+                <button class="add-btn" data-name="Ramo de graduación 6 rosas" data-price="8.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 134 -->
+            <div class="producto-card"><img src="img/p134.jpg">
+                <h3>Ramo de 8 rosas </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 8 rosas" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 135 -->
+            <div class="producto-card"><img src="img/p135.jpg">
+                <h3>Ramo de 7 rosas + nievecita </h3>
+                <p class="price">$9.50</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas + nievecita" data-price="9.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 136 -->
+            <div class="producto-card"><img src="img/p136.jpg">
+                <h3>Ramo de 3 rosas + nievecita</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas + nievecita" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+          
+            <!-- PRODUCTO 139 -->
+            <div class="producto-card"><img src="img/p139.jpg">
+                <h3>Ramo de 6 rosas + peluche </h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de 6 rosas + peluche" data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 140 -->
+            <div class="producto-card"><img src="img/p140.jpg">
+                <h3>Ramo de 7 rosas Messi</h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Messi" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 141 -->
+            <div class="producto-card"><img src="img/p141.jpg">
+                <h3>Ramo de 7 rosas Cristiano Ronaldo </h3>
+                <p class="price">$10.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Cristiano Ronaldo" data-price="10.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 142 -->
+            <div class="producto-card"><img src="img/p142.jpg">
+                <h3>Ramo de 7 rosas Spiderman </h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas Spiderman" data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 143 -->
+            <div class="producto-card"><img src="img/p143.jpg">
+                <h3>Ramo de 6 rosas + 2 Hotwheels </h3>
+                <p class="price">$15.00</p>
+                <button class="add-btn" data-name="Ramo de 6 rosas + 2 Hotwheels " data-price="15.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 144 -->
+            <div class="producto-card"><img src="img/p144.jpg">
+                <h3>Ramo de 5 rosas + 1 Hotwheel</h3>
+                <p class="price">$12.00</p>
+                <button class="add-btn" data-name="Ramo de 5 rosas + 1 Hotwheel" data-price="12.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 145 -->
+            <div class="producto-card"><img src="img/p145.jpg">
+                <h3>Ramo de 7 rosas + gorra</h3>
+                <p class="price">$22.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas + gorra" data-price="22.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 146 -->
+            <div class="producto-card"><img src="img/p146.jpg">
+                <h3>17 rosas + balón de fútbol </h3>
+                <p class="price">$30.00</p>
+                <button class="add-btn" data-name="17 rosas + balón de fútbol " data-price="30.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 147 -->
+            <div class="producto-card"><img src="img/p147.jpg">
+                <h3>Ramo de 14 rosas RM</h3>
+                <p class="price">$18.00</p>
+                <button class="add-btn" data-name="Ramo de 14 rosas RM" data-price="3.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 148 -->
+            <div class="producto-card"><img src="img/p148.jpg">
+                <h3>Ramo de 7 rosas RM </h3>
+                <p class="price">$9.00</p>
+                <button class="add-btn" data-name="Ramo de 7 rosas RM " data-price="9.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 149 -->
+            <div class="producto-card"><img src="img/p149.jpg">
+                <h3>Ramo de 16 rosas FCB </h3>
+                <p class="price">$20.00</p>
+                <button class="add-btn" data-name="Ramo de 16 rosas FCB" data-price="20.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 150 -->
+            <div class="producto-card"><img src="img/p150.jpg">
+                <h3>Ramo de 4 rosas FCB </h3>
+                <p class="price">$6.00</p>
+                <button class="add-btn" data-name="Ramo de 4 rosas FCB" data-price="6.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 151 -->
+            <div class="producto-card"><img src="img/p151.jpg">
+                <h3>Ramo de 3 rosas + Hotwheel </h3>
+                <p class="price">$7.00</p>
+                <button class="add-btn" data-name="Ramo de 3 rosas + Hotwheel" data-price="7.00">Agregar 🛒</button>
+            </div>
+
+            
+            
+            <!-- PRODUCTO 153 -->
+            <div class="producto-card"><img src="img/p153.jpg">
+                <h3>Par de pulseras Spiderman </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Par de pulseras Spiderman" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 154 -->
+            <div class="producto-card"><img src="img/p154.jpg">
+                <h3>Pulsera de Spiderman </h3>
+                <p class="price">$2.00</p>
+                <button class="add-btn" data-name="Pulsera de Spiderman" data-price="2.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 155 -->
+            <div class="producto-card"><img src="img/p155.jpg">
+                <h3>Collar de HelloKitty</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de HelloKitty" data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 157-->
+            <div class="producto-card"><img src="img/p157.jpg">
+                <h3>Collar Girasol de Sherk </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar Girasol de Sherk" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 158 -->
+            <div class="producto-card"><img src="img/p158.jpg">
+                <h3>Collar de balón de fútbol </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar de balón de fútbol" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 159 -->
+            <div class="producto-card"><img src="img/p159.jpg">
+                <h3>Collar de cerezas </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar de cerezas" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 160-->
+            <div class="producto-card"><img src="img/p160.jpg">
+                <h3>Collar Culpa Tuya</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Collar Culpa Tuya" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 161 -->
+            <div class="producto-card"><img src="img/p161.jpg">
+                <h3>Par de collares HelloKitty/Spiderman </h3>
+                <p class="price">$10.0</p>
+                <button class="add-btn" data-name="Par de collares HelloKitty/Spiderman " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+        
+            
+            <!-- PRODUCTO 163 -->
+            <div class="producto-card"><img src="img/p163.jpg">
+                <h3>Collar de Spiderman </h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de Spiderman " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 163 -->
+            <div class="producto-card"><img src="img/p163.jpg">
+                <h3>Collar de Spiderman girl</h3>
+                <p class="price">$5.00</p>
+                <button class="add-btn" data-name="Collar de Spiderman " data-price="5.00">Agregar 🛒</button>
+            </div>
+
+            <!-- PRODUCTO 161 -->
+            <div class="producto-card"><img src="img/p161.jpg">
+                <h3>Par de collares Spiderman </h3>
+                <p class="price">$10.0</p>
+                <button class="add-btn" data-name="Par de collares Spiderman " data-price="10.00">Agregar 🛒</button>
+            </div>
+
+        
+            
+            
+            <!-- PRODUCTO 168 -->
+            <div class="producto-card"><img src="img/p168.jpg">
+                <h3>Stickers personalizables  </h3>
+                <p class="price">20 x $2.50</p>
+                <button class="add-btn" data-name="Stickers personalizables  " data-price="2.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 169 -->
+            <div class="producto-card"><img src="img/p169.jpg">
+                <h3>cuadro mamá</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="cuadro mamá" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 170 -->
+            <div class="producto-card"><img src="img/p170.jpg">
+                <h3>Cuadro mamá 2  </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro mamá 2  " data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 171 -->
+            <div class="producto-card"><img src="img/p171.jpg">
+                <h3>Cuadro Parejas </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro Parejas" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 172 -->
+            <div class="producto-card"><img src="img/p172.jpg">
+                <h3>Cuadro mes </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="cuadro mes" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 173 -->
+            <div class="producto-card"><img src="img/p174.jpg">
+                <h3>Fotos Polaroid </h3>
+                <p class="price"> 10 x $2.50</p>
+                <button class="add-btn" data-name="Fotos Polaroid" data-price="2.50">Agregar 🛒</button>
+            </div>
+
+            
+
+            
+            <!-- PRODUCTO 176 -->
+            <div class="producto-card"><img src="img/p176.jpg">
+                <h3>cuadro "Love" </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro Love" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 177 -->
+            <div class="producto-card"><img src="img/p177.jpg">
+                <h3>Cuadro corazón</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro corazón" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 178 -->
+            <div class="producto-card"><img src="img/p178.jpg">
+                <h3>Cuadro "Tú"</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="cuadro tu" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 179 -->
+            <div class="producto-card"><img src="img/p179.jpg">
+                <h3>Cuadro con carta</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro con carta" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 180 -->
+            <div class="producto-card"><img src="img/p180.jpg">
+                <h3>Stickers personalizados </h3>
+                <p class="price">10 x $1.25</p>
+                <button class="add-btn" data-name="Stickers personalizados" data-price="1.25">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 181 -->
+            <div class="producto-card"><img src="img/p181.jpg">
+                <h3>cuadro collage </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="cuadro collage" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 182 -->
+            <div class="producto-card"><img src="img/p182.jpg">
+                <h3>Cuadro Spotify </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro Spotify" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 1183 -->
+            <div class="producto-card"><img src="img/p183.jpg">
+                <h3>Cuadro Spotify collage </h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name="Cuadro Spotify collage 2" data-price="7.50">Agregar 🛒</button>
+            </div>
+
+            
+            <!-- PRODUCTO 184 -->
+            <div class="producto-card"><img src="img/p184.jpg">
+                <h3>Cuadro google</h3>
+                <p class="price">$7.50</p>
+                <button class="add-btn" data-name=">Cuadro google" data-price="7.50">Agregar 🛒</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRITO -->
+  <div id="cart" class="cart">
+    <button class="btn-regresar" onclick="cerrarCarrito()">← Regresar</button>
+    <h3>Carrito de Compras</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar</button>
+    <button class="btn-whatsapp" onclick="enviarWhatsApp()">Enviar pedido por WhatsApp</button>
+</div>
+
+<!-- FONDO OSCURO -->
+<div id="overlay" class="overlay" onclick="cerrarCarrito()"></div>
+
+
+
+    <!-- ========== SECCIÓN DE ENVÍOS ========== -->
+<section id="envios" class="envios">
+    <h2>Envíos</h2>
+    <p class="envios-desc">Queremos que tus detalles lleguen con amor y a tiempo. 💜</p>
+
+    <div class="envios-grid">
+
+        <!-- MÉTODO 1 -->
+        <div class="envio-card">
+            <img src="img/envio1.png" alt="Delivery">
+            <h3>Envíos a Domicilio</h3>
+            <p>Entrega directa hasta la puerta de tu casa dentro del área metropolitana.</p>
+            <span class="envio-precio">Desde $2.00</span>
+        </div>
+
+        <!-- MÉTODO 2 -->
+        <div class="envio-card">
+            <img src="img/envio2.png" alt="Pick-up">
+            <h3>Punto de Entrega</h3>
+            <p>Puedes recoger tu pedido en nuestros puntos autorizados con un pequeño costo adicional.</p>
+            <span class="envio-precio">Según zona</span>
+        </div>
+
+        <!-- MÉTODO 3 -->
+        <div class="envio-card">
+            <img src="img/envio3.png" alt="Distrito">
+            <h3>Envíos por distrito</h3>
+            <p>Enviamos a San Juan Opico, Ciudad Arce y Lourdes por medio de mensajería aliada.</p>
+            <span class="envio-precio">Según zona</span>
+        </div>
+
+    </div>
+
+    <p class="extra-msg">
+        Si necesitas un envío urgente o personalizado, estamos para ayudarte. 💌
+    </p>
+</section>
+ 
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Estamos listos para ayudarte 💜</p>
+
+        <a class="whatsapp" href="https://wa.me/50372682523" target="_blank">WhatsApp</a>
+        <a class="instagram" href="https://www.instagram.com/amoori_jn?igsh=NnhsdzlzdnQ4bXVx&utm_source=qr" target="_blank">Instagram</a>
+
+        <p class="mascota">Envíanos mensaje directo a nuestras redes sociales. 💕 </p>
+    </section>
+
+    <script src="script.js"></script>
+
+<!-- buscador inicia -->
+<script>
+function buscarProducto() {
+    let input = document.getElementById("buscador").value.toLowerCase();
+    let productos = document.querySelectorAll(".producto-card");
+
+    productos.forEach(card => {
+        let titulo = card.querySelector("h3").textContent.toLowerCase();
+
+        if (titulo.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+<script>
+window.addEventListener("scroll", () => {
+    const buscador = document.querySelector(".buscador-container");
+    if (window.scrollY > 150) {
+        buscador.classList.add("sticky");
+    } else {
+        buscador.classList.remove("sticky");
+    }
+});
+</script>
+
+<!-- buscador iacaba -->
+ <script>
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+</script>
+<!-- responsive en la navbar -->
+</body>
+</html>
